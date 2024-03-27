@@ -35,9 +35,9 @@ const Page = () => {
     // Handle redirections based on secretKey (on client-side)
     if (typeof window !== 'undefined') {
       if (secretKey === 'level4') {
-        window.location.replace('https://treasurehunt-nitgoa.vercel.app/youknowwhattodonext');
+        window.location.replace('https://treasurehunt-eta.vercel.app/youknowwhattodonext');
       } else if (secretKey === 'level5') {
-        window.location.replace('https://treasurehunt-nitgoa.vercel.app/congratulation');
+        window.location.replace('https://treasurehunt-eta.vercel.app/congratulation');
       }
     }
   }, [secretKey]); // Run only when secretKey changes

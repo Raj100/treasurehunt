@@ -21,20 +21,20 @@ const Page = () => {
   const handleRedirect = () => {
     switch (secretKey) {
       case 'level3':
-        window.location.href = 'https://treasurehunt-nitgoa.vercel.app/youarecloser';
+        window.location.href = 'https://treasurehunt-eta.vercel.app/youarecloser';
         console.log('Level 2: Redirecting to /youareclose');
         break;
       case 'level4':
-        window.location.href = 'https://treasurehunt-nitgoa.vercel.app/youknowwhattodonext';
+        window.location.href = 'https://treasurehunt-eta.vercel.app/youknowwhattodonext';
         console.log('Level 2: Redirecting to /youareclose');
         break;
       case 'level5':
-        window.location.href = 'https://treasurehunt-nitgoa.vercel.app/congratulation';
+        window.location.href = 'https://treasurehunt-eta.vercel.app/congratulation';
         console.log('Level 2: Redirecting to /youareclose');
         break;
       case 'level2':
       default:
-        window.location.href = 'https://treasurehunt-nitgoa.vercel.app/youareclose';
+        window.location.href = 'https://treasurehunt-eta.vercel.app/youareclose';
         console.log('Level 2: Redirecting to /youareclose');
     }
   };

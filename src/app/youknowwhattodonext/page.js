@@ -30,7 +30,7 @@ const Page = () => {
           console.log('Level 4: Setting secretKey to level5');
           break;
         case 'level5':
-          window.location.replace('https://treasurehunt-nitgoa.vercel.app/congratulation');
+          window.location.replace('https://treasurehunt-eta.vercel.app/congratulation');
           console.log('Level 5: Redirecting to /congratulation');
           break;
         default:
