@@ -15,15 +15,15 @@ const Page = () => {
       console.log('Level 1: Setting secretKey to level2');
     }
     if (secretKey === 'level3') {
-        window.location.replace('http://localhost:3000/youarecloser');
+        window.location.replace('https://treasurehunt-nitgoa.vercel.app/youarecloser');
         console.log('Level 2: Redirecting to /youareclose');
       }
       if (secretKey === 'level4') {
-        window.location.replace('http://localhost:3000/youknowwhattodonext');
+        window.location.replace('https://treasurehunt-nitgoa.vercel.app/youknowwhattodonext');
         console.log('Level 2: Redirecting to /youareclose');
       }
       if (secretKey === 'level5') {
-        window.location.replace('http://localhost:3000/congratulation');
+        window.location.replace('https://treasurehunt-nitgoa.vercel.app/congratulation');
         console.log('Level 2: Redirecting to /youareclose');
       }
   }, [/* empty dependency array */]);
@@ -31,7 +31,7 @@ const Page = () => {
   useEffect(() => {
     // Redirect based on secretKey, but only once after setting level2
     if (secretKey === 'level2') {
-      window.location.replace('http://localhost:3000/youareclose');
+      window.location.replace('https://treasurehunt-nitgoa.vercel.app/youareclose');
       console.log('Level 2: Redirecting to /youareclose');
     }
   }, [secretKey]); // Only re-run if secretKey changes

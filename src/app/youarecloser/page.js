@@ -31,9 +31,9 @@ const Page = () => {
   useEffect(() => {
     // Handle redirections based on secretKey
     if (secretKey === 'level4') {
-      window.location.replace('http://localhost:3000/youknowwhattodonext');
+      window.location.replace('https://treasurehunt-nitgoa.vercel.app/youknowwhattodonext');
     } else if (secretKey === 'level5') {
-      window.location.replace('http://localhost:3000/congratulation');
+      window.location.replace('https://treasurehunt-nitgoa.vercel.app/congratulation');
     }
   }, [secretKey]); // Run only when secretKey changes
 
