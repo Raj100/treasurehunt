@@ -40,7 +40,7 @@ const Page = () => {
   }, [secretKey]); // Only re-run when secretKey changes
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between p-10 lg:p-24">
       <h1>Level 4 yeah!</h1>
     </div>
   );

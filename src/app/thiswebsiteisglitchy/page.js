@@ -40,7 +40,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between  p-10 lg:p-24">
       <h1>This site seems glitchy. Try something!</h1>
     </div>
   );
