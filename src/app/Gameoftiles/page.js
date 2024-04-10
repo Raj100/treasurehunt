@@ -61,13 +61,14 @@ const page = () => {
 
   const card1content = (
     <div className="bg-white rounded text-center justify-center flex flex-col h-full w-full p-2 gap-2">
-      <div className="flex gap-1">
+      <p>Who's there?</p>
+      <div className="flex flex-col gap-1">
         {/* <label for="html">who's here? :</label> */}
         <input
           onChange={(e) => {
             setWhoIsWho(e.target.value);
           }}
-          className="border p-1"
+          className="border p-1 "
           type="text"
           placeholder="who's here?"
         />
@@ -80,15 +81,15 @@ const page = () => {
       </div>
 
       {whoIsWhoans && (
-        <div className="flex gap-1">
+        <div className="flex flex-col gap-1">
           {" "}
           <input
             onChange={(e) => {
               setWhoWho(e.target.value);
             }}
-            className="border p-1"
+            className="border p-1 "
             type="text"
-            placeholder="Do you who who?"
+            placeholder="You know who who?"
           />
           <button
             className="bg-blue-500 text-white px-4 py-2"
@@ -111,7 +112,7 @@ const page = () => {
           onChange={(e) => {
             setCard2Color(e.target.value);
           }}
-          className=" border p-1"
+          className=" border p-1 grow-0"
           type="text"
           name=""
           id=""
@@ -410,7 +411,7 @@ const page = () => {
               <p>9</p>
             </div>
             <div className="flip-card-back bg-white p-2">
-              {sequence==="9" && <p>Go to 6</p>}
+              {(card9 || sequence==="9") && <p>Go to 6</p>}
               {sequence === "969" && <p>Go to 8</p>}
 
               {sequence === "969869" && 
@@ -465,7 +466,7 @@ const page = () => {
               <p>11</p>
             </div>
             <div className="flip-card-back bg-white p-2">
-              <p> COngratulations</p>
+              <p> Congratulations</p>
             </div>
           </div>
         </div>
