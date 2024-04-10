@@ -363,7 +363,7 @@ const page = () => {
               <p className="text-2xl">7</p>
             </div>
             <div className="flip-card-back bg-white p-2 bg-[#ffcd00]">
-              <Link href="/thalaforareason">
+              <Link href="/thalaforareason" target="_blank">
                 <button className="px-4 py-2 bg-yellow-500 text-white rounded-xl">
                   Go to heaven
                 </button>
@@ -557,7 +557,7 @@ const page = () => {
               <p className="text-2xl">12</p>
             </div>
             <div className="flip-card-back p-2">
-              <Link href="/guessinggame">
+              <Link href="/guessinggame" target="_blank">
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-xl">
                   Start Game
                 </button>
