@@ -39,6 +39,7 @@ const page = () => {
   const [card11Open, setCard11Open] = useState(false);
   const [checkans, setcheckans] = useState(false);
   const [mytext, setmytext] = useState("");
+  const [card111Open, setcard111Open] = useState(false);
 
   const [showElement, setShowElement] = useState(false);
 
@@ -53,6 +54,7 @@ const page = () => {
   const handleWhoWho = () => {
     if (whoWho.toLowerCase() === "owl") {
       setWhoWhoans(true);
+      setcard111Open(true);
     }
   };
 
@@ -181,6 +183,10 @@ const page = () => {
         {/* 1 */}
         <div
           className="rounded flip-card h-96 "
+          onMouseLeave={() => {
+            setCard1(0);
+          }
+          }
         >
           <div
             className={`flip-card-inner ${card1 >= 2 ? "flip" : ""}`}
@@ -200,9 +206,6 @@ const page = () => {
         {/* //2 */}
         <div
           className="rounded flip-card h-96"
-          onMouseLeave={() => {
-            setCard2(false);
-          }}
         >
           <div
             className={`flip-card-inner ${card2 ? "flip" : ""}`}
@@ -517,7 +520,7 @@ const page = () => {
           <div
             className={`flip-card-inner ${card11 ? "flip" : ""}`}
             onClick={() => {
-              if (card11Open && WhoWhoans && final === "-5" && card5more === "12") {
+              if (card11Open && card111Open && final === "-5" && card5more === "12") {
                 setCard11(true);
               } else {
                 playErrorSound();
