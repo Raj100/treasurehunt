@@ -55,7 +55,7 @@ const page = () => {
   const whoIsWhoanscontent = (
     <div href="thalaforareason">
       {/* <button className="bg-blue-500 text-white px-4 py-2">Next</button> */}
-      Congratulations
+      Congratulations! Go to 7 its unloacked!
     </div>
   );
 
@@ -103,7 +103,7 @@ const page = () => {
     </div>
   );
   const card2content = (
-    <div className="bg-white rounded p-2 flex flex-col">
+    <div className="bg-white  rounded p-2 flex flex-col">
       <p className="mb-12">Bhai Yeh kya hai?</p>
       <div className="flex gap-2 items-center justify-center">
         <div className="h-8 w-8 bg-[#ffcd00]"></div>
@@ -151,7 +151,7 @@ const page = () => {
   return (
     <>
       {/* 1 */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 text-black text-center">
+      <div className="bg-black grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 text-black text-center">
         <div
           className="rounded flip-card h-96"
           onMouseLeave={() => {
@@ -379,7 +379,7 @@ const page = () => {
 
                     }
                   }}
-                  className="px-2 py-4"
+                  className="px-2 py-4" 
                   type="submit"
                 >
                   Submit
@@ -416,7 +416,7 @@ const page = () => {
               {sequence === "969869" && 
                 <div className="flex flex-col">
                   <p>Wapas aa gya yahan?</p>{" "}
-                  <input onChange={(e)=>{setsemifinal(e.target.value);}} type="text" name="" id="" />
+                  <input className="border p-2 m-2" onChange={(e)=>{setsemifinal(e.target.value);}} type="text" name="" id="" />
                   <button onClick={()=>{setcheckans(true);}} className="px-4 py-2 text-white bg-blue-500">Submit</button>
                 </div>
               }
@@ -465,7 +465,7 @@ const page = () => {
               <p>11</p>
             </div>
             <div className="flip-card-back bg-white p-2">
-              <p>Congratulations</p>
+              <p> COngratulations</p>
             </div>
           </div>
         </div>
