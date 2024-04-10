@@ -420,7 +420,7 @@ const page = () => {
                       } else {
                       }
                     }}
-                    className="px-2 py-4"
+                    className="px-2 py-4 bg-blue-500 text-white rounded-xl m-2"
                     type="submit"
                   >
                     Submit
@@ -447,6 +447,9 @@ const page = () => {
                 setCard9(true);
                 setsequence(sequence + "9");
               }
+              else{
+                playErrorSound();
+            }
             }}
           >
             <div className="flip-card-front bg-white flex-col justify-center h-full">

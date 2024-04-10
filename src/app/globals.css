@@ -94,6 +94,8 @@ body {
   backface-visibility: hidden;
   clip-path: url(#clip-cards);
   background: url(../assets/blurry-gradient.svg) no-repeat;
+  /* background: url(../assets/blue-background/OB9S6Q0.jpg) no-repeat; */
+
   background-size: cover;
 }
 

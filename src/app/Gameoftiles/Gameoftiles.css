@@ -7,8 +7,8 @@ svg.clipped{
     height: 0;
 }
 .game-bg{
-    /* background: url(../../assets/blurry-gradient.svg) no-repeat; */
-    /* background: url(../../assets/low2.svg) no-repeat; */
+    background: url(../../assets/rain-background/3194173.jpg) no-repeat;
+    /* background: url(../../assets/blue-background/OB9S6Q0.jpg) no-repeat; */
     background-size: cover;
 }
 .cards{
