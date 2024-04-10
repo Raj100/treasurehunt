@@ -55,20 +55,20 @@ const page = () => {
   const whoIsWhoanscontent = (
     <div href="thalaforareason">
       {/* <button className="bg-blue-500 text-white px-4 py-2">Next</button> */}
-      Congratulations! Go to 7 its unloacked!
+      Congratulations! Go to 7 its unlocked!
     </div>
   );
 
   const card1content = (
     <div className="bg-white rounded text-center justify-center flex flex-col h-full w-full p-2 gap-2">
       <p>Who's there?</p>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         {/* <label for="html">who's here? :</label> */}
         <input
           onChange={(e) => {
             setWhoIsWho(e.target.value);
           }}
-          className="border p-1 "
+          className="border p-2 "
           type="text"
           placeholder="who's here?"
         />
@@ -120,7 +120,7 @@ const page = () => {
       </div>
       <button
         onClick={() => {
-          if (card2color.toLowerCase() === "#ffcd00") {
+          if (card2color.toLowerCase() === "#ffcd00" || card2color.toLowerCase() === "yellow" || card2color.toLowerCase() === "gold" || card2color.toLowerCase() === "ffcd00"){
             setCard2more(1);
             handlecard3();
           }
@@ -364,7 +364,7 @@ const page = () => {
                   onChange={(e) => {
                     setfinal(e.target.value);
                   }}
-                  className=""
+                  className=" border p-2 m-2 shrink-0"
                   type="text"
                 ></input>
               )}
