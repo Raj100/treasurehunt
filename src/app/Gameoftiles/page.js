@@ -384,12 +384,15 @@ const page = () => {
           <div
             className={`flip-card-inner ${card8 ? "flip" : ""}`}
             onClick={() => {
-              if (sequence === "969" || sequence === "969869") {
+              if (sequence === "969" ) {
                 setCard8(true);
                 setsequence(sequence + "8");
-              } else {
+              } 
+              else if (semifinal === "969869" || semifinal === "69869") {
+                setCard8(true);
+              }
+              else {
                 playErrorSound();
-                setsequence("");
               }
             }}
           >
@@ -417,6 +420,7 @@ const page = () => {
                       if (final === "-5") {
                         final === setCard11Open(true);
                         setmytext("Go to 11");
+                        sequence = "";
                       } else {
                       }
                     }}
@@ -447,17 +451,15 @@ const page = () => {
                 setCard9(true);
                 setsequence(sequence + "9");
               }
-              else{
-                playErrorSound();
-            }
+              if (sequence === "969869") {
+                setCard9(true);
+              }
             }}
           >
             <div className="flip-card-front bg-white flex-col justify-center h-full">
               <p className="text-2xl">9</p>
             </div>
             <div className="flip-card-back bg-white p-2">
-              {sequence === "9" && <p>Go to 6</p>}
-              {sequence === "969" && <p>Go to 8</p>}
               {sequence === "969869" && (
                 <div className="flex flex-col">
                   <p>Wapas aa gya yahan?</p>{" "}
@@ -481,11 +483,8 @@ const page = () => {
                 </div>
               )}
               {/* {checkans &&<p>Go to 8</p>} */}
+              {sequence === "9" ? <p>Go to 6</p> : (sequence === "969"  || (checkans && (semifinal === "969869" || semifinal === "69869"))) ? <p>Go to 8</p> :""}
 
-              {checkans &&
-                (semifinal === "969869" || semifinal === "69869") && (
-                  <p>Go to 8</p>
-                )}
             </div>
           </div>
         </div>
