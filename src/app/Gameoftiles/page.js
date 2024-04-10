@@ -42,7 +42,7 @@ const page = () => {
   const [showElement, setShowElement] = useState(false);
 
   const handleWhoIsWho = () => {
-    if (whoIsWho === "youknowwho" || whoIsWho === "you know who") {
+    if (whoIsWho.toLowerCase() === "youknowwho" || whoIsWho.toLowerCase() === "you know who") {
       setWhoIsWhoans(true);
     }
   };
