@@ -32,7 +32,7 @@ const page = () => {
   const [card5more, setCard5more] = useState("");
   const [card12open, setCard12open] = useState(false);
   const [card6open, setCard6Open] = useState(false);
-  const [sequence, setsequence] = useState("");
+  let [sequence, setsequence] = useState("");
   const [semifinal, setsemifinal] = useState("");
   const [final, setfinal] = useState("");
   const [card11Open, setCard11Open] = useState(false);
@@ -194,7 +194,10 @@ const page = () => {
         </div>
 
         {/* 3 */}
-        <div className="rounded flip-card h-96">
+        <div className="rounded flip-card h-96"
+                  onMouseLeave={() => {
+                    setCard3(false);
+                  }}>
           <div
             className={`flip-card-inner ${card3 ? "flip" : ""}`}
             onClick={() => {
@@ -220,7 +223,10 @@ const page = () => {
         </div>
 
         {/* 4 */}
-        <div className="rounded flip-card h-96">
+        <div className="rounded flip-card h-96" 
+                  onMouseLeave={() => {
+                    setCard4(false);
+                  }}>
           <div
             className={`flip-card-inner ${card4 ? "flip" : ""}`}
             onClick={() => setCard4(true)}
@@ -335,7 +341,7 @@ const page = () => {
           <div
             className={`flip-card-inner ${card8 ? "flip" : ""}`}
             onClick={() => {
-              if (sequence === "969") {
+              if (sequence === "969"||sequence==="969869") {
                 setCard8(true);
                 setsequence(sequence + "8");
               } else {
@@ -394,29 +400,28 @@ const page = () => {
           <div
             className={`flip-card-inner ${card9 ? "flip" : ""}`}
             onClick={() => {
+              if(sequence!== "969869"){
               setCard9(true);
               setsequence(sequence + "9");
+              }
             }}
           >
             <div className="flip-card-front bg-white flex-col justify-center h-full">
               <p>9</p>
             </div>
             <div className="flip-card-back bg-white p-2">
-              {card9 && <p>Go to 6</p>}
+              {sequence==="9" && <p>Go to 6</p>}
               {sequence === "969" && <p>Go to 8</p>}
-              {sequence === "969869" && (
+
+              {sequence === "969869" && 
                 <div className="flex flex-col">
                   <p>Wapas aa gya yahan?</p>{" "}
-                  <input
-                  className="border p-2 m-2"
-                    onChange={(e) => {
-                      setsemifinal(e.target.value);
-                    }}
-                    type="text"
-                  />
+                  <input onChange={(e)=>{setsemifinal(e.target.value);}} type="text" name="" id="" />
                   <button onClick={()=>{setcheckans(true);}} className="px-4 py-2 text-white bg-blue-500">Submit</button>
                 </div>
-              )}
+              }
+              {/* {checkans &&<p>Go to 8</p>} */}
+
               {checkans && (semifinal === "969869" || semifinal === "69869") && (
                 <p>Go to 8</p>
               )}
