@@ -335,9 +335,9 @@ const page = () => {
             <div className="flip-card-front bg-white flex-col justify-center h-full">
               <p className="text-2xl">6</p>
             </div>
-            <div className="flip-card-back bg-white p-2">
-              {sequence === "96" && <p>Go to 9</p>}
-              {sequence === "96986" && <p>Go to 9</p>}
+            <div className="flip-card-back bg-white p-2 flex h-full items-center justify-center">
+              {sequence === "96" && <p>"⁠  ⁠SIX - S"</p>}
+              {sequence === "96986" && <p>"  ⁠I hold the key to feline lives, but hide in plain sight with endless ties. "</p>}
             </div>
           </div>
         </div>
@@ -397,8 +397,8 @@ const page = () => {
             <div className="flip-card-front bg-white flex-col justify-center h-full">
               <p className="text-2xl">8</p>
             </div>
-            <div className="flip-card-back bg-white p-2">
-              {sequence === "9698" && <p>Go to 6</p>}
+            <div className="flip-card-back bg-white p-2 flex h-full items-center justify-center">
+              {sequence === "9698" && <p>"Craftily carved, I maximize space for the golden nectar's embrace."</p>}
               {(semifinal === "969869" || semifinal === "69869") && (
                 <p>What is x=1;y=5 then? x-=y+1?</p>
               )}
@@ -457,10 +457,10 @@ const page = () => {
             <div className="flip-card-front bg-white flex-col justify-center h-full">
               <p className="text-2xl">9</p>
             </div>
-            <div className="flip-card-back bg-white p-2">
+            <div className="flip-card-back bg-white p-2 flex h-full items-center justify-center">
               {sequence === "969869" && (
                 <div className="flex flex-col">
-                  <p>Wapas aa gya yahan?</p>{" "}
+                  <p>Wapas aa gye yahan?</p>{" "}
                   <input
                     className="border p-2 m-2"
                     onChange={(e) => {
@@ -481,7 +481,7 @@ const page = () => {
                 </div>
               )}
               {/* {checkans &&<p>Go to 8</p>} */}
-              {sequence === "9" ? <p>Go to 6</p> : (sequence === "969"  || (checkans && (semifinal === "969869" || semifinal === "69869"))) ? <p>Go to 8</p> :""}
+              {sequence === "9" ? <p>" ⁠Split myself in parts, their sum remains the same, the first perfect I claim."</p> : (sequence === "969"  || (checkans && (semifinal === "969869" || semifinal === "69869"))) ? <p>"⁠I loop endlessly, a symbol of infinity turned on its side."</p> :""}
 
             </div>
           </div>
