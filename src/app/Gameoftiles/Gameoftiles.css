@@ -11,7 +11,8 @@ svg.clipped{
     /* background: url(../../assets/blue-background/OB9S6Q0.jpg) no-repeat; */
     background-size: cover;
 }
-.cards{
+.cards2{
     /* background: url(../../assets/low.svg) no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
+    clip-path: url(#clip-cards);
 }

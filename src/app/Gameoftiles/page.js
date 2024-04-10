@@ -57,7 +57,7 @@ const page = () => {
   };
 
   const whoIsWhoanscontent = (
-    <div href="thalaforareason">
+    <div>
       {/* <button className="bg-blue-500 text-white px-4 py-2">Next</button> */}
       Congratulations! Go to 7 its unlocked!
     </div>
@@ -108,7 +108,7 @@ const page = () => {
     </div>
   );
   const card2content = (
-    <div className="bg-white  rounded p-2 flex flex-col">
+    <div className="  rounded p-2 flex flex-col">
       <p className="mb-12">Bhai Yeh kya hai?</p>
       <div className="flex gap-2 items-center justify-center">
         <div className="h-8 w-8 bg-[#ffcd00]"></div>
@@ -126,15 +126,13 @@ const page = () => {
         onClick={() => {
           if (
             card2color.toLowerCase() === "#ffcd00" ||
-            card2color.toLowerCase() === "yellow" ||
-            card2color.toLowerCase() === "gold" ||
             card2color.toLowerCase() === "ffcd00"
           ) {
             setCard2more(1);
             handlecard3();
           }
         }}
-        className="py-2 px-8 bg-blue-500 text-white rounded-xl m-2"
+        className="py-2 px-8 bg-emerald-500 text-white rounded-xl m-2"
       >
         Submit
       </button>
@@ -183,9 +181,6 @@ const page = () => {
         {/* 1 */}
         <div
           className="rounded flip-card h-96 "
-          onMouseLeave={() => {
-            setCard1(0);
-          }}
         >
           <div
             className={`flip-card-inner ${card1 >= 2 ? "flip" : ""}`}
@@ -269,7 +264,7 @@ const page = () => {
             </div>
             <div className="flip-card-back bg-white p-2">
               <div>
-                <Image src={Voldemort} alt=""></Image>
+                <Image className="cards2" src={Voldemort} alt=""></Image>
                 <p>I am There</p>
               </div>
             </div>
@@ -504,7 +499,7 @@ const page = () => {
               <p className="text-2xl">10</p>
             </div>
             <div className="flip-card-back bg-white p-2 realtive">
-              <Image src={owl} alt="" className="h-full pb-10"></Image>
+              <Image src={owl} alt="" className="h-full pb-10 cards2"></Image>
               <p className="absolute bottom-5 left-1/2 -translate-x-1/2">
                 I am who who
               </p>
@@ -522,7 +517,7 @@ const page = () => {
           <div
             className={`flip-card-inner ${card11 ? "flip" : ""}`}
             onClick={() => {
-              if (card11Open) {
+              if (card11Open && WhoWhoans && final === "-5" && card5more === "12") {
                 setCard11(true);
               } else {
                 playErrorSound();
